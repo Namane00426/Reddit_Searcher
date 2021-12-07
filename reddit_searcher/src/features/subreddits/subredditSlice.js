@@ -1,24 +1,23 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const subredditslice = createSlice({
+const subredditSlice = createSlice({
   name: 'subreddits',
-  initialState: [
-    [id]: {
-      id: '',
-      name: '',
-    }
-  ],
+  initialState: {},
   reducers: {
-    addSubreddit(state, action) {
+    addSubreddit: (state, action) => {
       const {id, name} = action.payload;
-      state.push({id, name});
+      state.push[id] = {
+        id: id,
+        name: name
+      }
+      }
     },
-    removeSubreddit(state, action) {
-      const {removeId} = action.payload;
-      state.filter((state, id) => state.id !== removeId);
-    }
-  }
+    // removeSubreddit(state, action) {
+    //   const {removeId} = action.payload;
+    //   state.filter((state, id) => state.id !== removeId);
+    // }
 })
 
-export const {addSubreddit} = subredditslice.actions;
-export default subredditslice.reducer;
+export const {addSubreddit} = subredditSlice.actions;
+export const selectSubreddits = state => state.subreddits;
+export default subredditSlice.reducer;
