@@ -1,14 +1,12 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Switch,
+  // Switch,
   Route,
   NavLink,
 } from "react-router-dom";
 
-import SearchCategory from '../components/SearchCategory';
-import Categories from '../features/categories/Categories';
-import Category from '../features/categories/Category';
+import SearchSubreddit from '../components/SearchSubreddit';
 import Subreddits from '../features/subreddits/Subreddits';
 import Subreddit from '../features/subreddits/Subreddit';
 import ROUTES from './routes';
@@ -19,26 +17,26 @@ export default function App() {
       <nav>
         <ul>
           <li>
-            <NavLink to={ROUTES.categories.Route()} activeClassName="active">
-              View Subreddits
-            </NavLink>
+            <NavLink to={ROUTES.subreddits.Route()} activeClassName="active">
+              Viewer            
+             </NavLink>
           </li>
           <li>
-            <NavLink to={ROUTES.newCategories.Route()} activeClassName="active">
-              Edit favorite categories
+            <NavLink to={ROUTES.newSubreddits.Route()} activeClassName="active">
+              Editor
             </NavLink>
           </li>
         </ul>
       </nav>
 
-      <Switch>
+      {/* <Switch>
         <Route path="/categories">
-          <categoriesRoutes /> 
+          <subredditsRoutes /> 
         </Route>
         <Route path="/categories">
-          <newCategoriesRoutes /> 
+          <newSubredditsRoutes /> 
         </Route>
-      </Switch>
+      </Switch> */}
     </Router>
   );
 }
