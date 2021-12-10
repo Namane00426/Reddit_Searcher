@@ -1,0 +1,124 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background-color: white;
+  border: 1px solid red;
+  height: auto;
+}
+
+.banner {
+  height: 45px;
+  width: 100%;
+  background-image: url(./trianglify-lowres.png);
+  background-size: cover;
+  margin: 0;
+}
+
+.logo {
+  width: max-content;
+  margin: 5px 0 5px 0;
+}
+
+.nav {
+  display: inline-flex;
+  padding: 24px 36px;
+  list-style: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  padding: 0;
+  margin: 0 0 0 30%;
+  list-style: none;
+  color: #383838;
+}
+
+nav ul li {
+  margin-bottom: 0 !important;
+}
+
+.grid {
+  grid-template: ;
+}
+
+.box {
+}
+
+.text {
+}
+
+.imgContainer.center {
+}
+
+.title {
+}
+
+.updatad {
+}
+
+.comments {
+  font-weight: 400;
+}
+
+.center {
+  color: chocolate;
+}
+
+.grid {
+}
+
+.box {
+}
+
+.text {
+}
+
+.imgContainer.center {
+}
+
+.title {
+}
+
+.updatad {
+}
+
+.comments {
+  font-weight: 400;
+}
+
+.center {
+  color: chocolate;
+}
+
+.grid {
+}
+
+.box {
+}
+
+.text {
+}
+
+.imgContainer.center {
+}
+
+.title {
+}
+
+.updatad {
+}
+
+.comments {
+  font-weight: 400;
+}
+
+.center {
+  color: chocolate;
+}

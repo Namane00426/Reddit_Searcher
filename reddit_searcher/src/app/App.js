@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  // Switch,
   Route,
   NavLink,
 } from "react-router-dom";
@@ -9,7 +8,10 @@ import {
 import SearchSubreddit from '../components/SearchSubreddit';
 import Subreddits from '../features/subreddits/Subreddits';
 import Subreddit from '../features/subreddits/Subreddit';
+import Topics from '../features/topics/topics'
 import ROUTES from './routes';
+
+
 
 export default function App() {
   return (
@@ -29,14 +31,6 @@ export default function App() {
         </ul>
       </nav>
 
-      {/* <Switch>
-        <Route path="/categories">
-          <subredditsRoutes /> 
-        </Route>
-        <Route path="/categories">
-          <newSubredditsRoutes /> 
-        </Route>
-      </Switch> */}
     </Router>
   );
 }
